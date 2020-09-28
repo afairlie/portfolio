@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 const Container = styled.div`
+  position: sticky;
+  top: 0.5rem;
+  right: 0.5rem;
   display: flex;
   width: 100%;
   flex-direction: row;
