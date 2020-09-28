@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 const Container = styled.div`
   position: sticky;
+  z-index: 1000;
   top: 0.5rem;
   right: 0.5rem;
   display: flex;
