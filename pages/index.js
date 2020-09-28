@@ -31,7 +31,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         
-        <Content>
+        <Content id='content'>
           <p>home page content</p>
         </Content>
     </Layout>

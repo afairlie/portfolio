@@ -24,16 +24,16 @@ const StyledLink = styled.a`
 export default function Nav() {
   return (
   <Container>
-    <Link href="/">
+    <Link href="/#content" passHref>
       <StyledLink>Home</StyledLink>
     </Link>
-    <Link href="/about">
+    <Link href="/about" passHref>
       <StyledLink>About</StyledLink>
     </Link>
-    <Link href="/projects">
+    <Link href="/projects" passHref>
       <StyledLink>Projects</StyledLink>
     </Link>
-    <Link href="/cv">
+    <Link href="/cv" passHref>
       <StyledLink>CV</StyledLink>
     </Link>
   </Container>
