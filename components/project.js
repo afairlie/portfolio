@@ -2,24 +2,17 @@ import styled from 'styled-components'
 
 const ICON_COLOR = `ff7f50`
 
-const ProjectItem = styled.div`
+const ProjectContainer = styled.div`
   border: 1px solid blue;
   border-radius: 2px;
-  margin-bottom: 3rem;
-  max-height: fit-content;
+  margin: 0 0.5rem 3rem;
 
   padding: 0.5rem;
 `
 
-const ImgContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const Image = styled.img`
   border: 20px solid ${({theme}) => theme.colors.highlight};
-  max-width: 400px;
+  max-width: 350px;
 `
 
 const Container = styled.div`
@@ -63,45 +56,47 @@ const Text = styled.p`
   margin: 1rem 0;
 `
 
-export default function Project({api}) {
+export default function Project({
+  img,
+  title,
+  repo,
+  url,
+  description,
+  stack,
+  api,
+}) {
   return (
-    <ProjectItem>
-      <ImgContainer>
-        <Image src='./shoppies2.bmp'></Image>
-      </ImgContainer>
-      <Container>
-        <Header>
-          <TitleContainer>
-            <Title>Shoppies</Title>
-            <IconsContainer>
-              <Icon href='#' target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
-              <Icon href='#' target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>
-            </IconsContainer>
-          </TitleContainer>
-          <Text>
-            An app to vote for your favourite films using the OMDB API
-          </Text>
-        </Header>
-        <TechDetails>
-          <SubHeading>Stack</SubHeading>
-          <Text>
-            Next js, React, Styled Components, Framer Motion
-          </Text>
-          {api && 
-          <>
-          <TitleContainer>
-            <SubHeading>API</SubHeading>
-            <IconsContainer>
-              <Icon href='#' target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
-              <Icon href='#' target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>
-            </IconsContainer>
-          </TitleContainer> 
-          <Text>
-            Rails API, Active Record, JWT Auth
-          </Text>
-          </>}
-        </TechDetails>
-      </Container>
-    </ProjectItem>
+    <div>
+      <ProjectContainer>
+        {img && <Image src={`${img}`}></Image>}
+        <Container>
+          <Header>
+            <TitleContainer>
+              <Title>{title}</Title>
+              <IconsContainer>
+                <Icon href={repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
+                <Icon href={url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>
+              </IconsContainer>
+            </TitleContainer>
+            <Text>{description}</Text>
+          </Header>
+          <TechDetails>
+            <SubHeading>Stack</SubHeading>
+            <Text>{stack}</Text>
+            {api && 
+            <>
+            <TitleContainer>
+              <SubHeading>API</SubHeading>
+              <IconsContainer>
+                <Icon href={api.repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
+                <Icon href={api.url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>
+              </IconsContainer>
+            </TitleContainer> 
+            <Text>{api.stack}</Text>
+            </>}
+          </TechDetails>
+        </Container>
+      </ProjectContainer>
+    </div>
   )
 }

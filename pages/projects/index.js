@@ -3,27 +3,43 @@ import styled from 'styled-components'
 import Layout from '../../components/layout'
 import Project from '../../components/project'
 
+const projectMock = {
+  img: 'shoppies3.png',
+  title: 'Shoppies',
+  repo: '#',
+  url: '#',
+  description: 'an app to nominate movies from OMDB API',
+  stack: 'Typescript, React, Styled Components, Framer Motion',
+  api: {
+    stack: 'Rails Api, Active Record, JWT Auth',
+    repo: '#',
+    url: '#',
+  },
+}
 
 const ProjectContainer = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 1rem;
+  padding: 0 0.5rem;
 `
 
 export default function Projects() {
+
   return (
     <Layout>
     <h1>Projects</h1>
     <p>browse what I've been building lately</p>
     <ProjectContainer>
-      <Project api/>
-      <Project/>
-      <Project api/>
-      <Project/>
-      <Project/>
-      <Project/>
+      <Project {...projectMock}/>
+      <Project {...projectMock} img={null}/>
+      <Project {...projectMock} api={null}/>
+      <Project {...projectMock} api={null}/>
+      <Project {...projectMock}/>
+      <Project {...projectMock}/>
     </ProjectContainer>
     </Layout>
   )

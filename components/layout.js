@@ -13,8 +13,8 @@ const Wrapper = styled.div`
 
 const Container = styled.main`
   min-height: calc(100vh - 100px - 3rem);
-  padding: 0 0.5rem;
   display: flex;
+  width: 100vw;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
