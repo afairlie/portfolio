@@ -19,12 +19,11 @@ const projectMock = {
 
 const ProjectContainer = styled.div`
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 1rem;
-  padding: 0 0.5rem;
+  margin: 1rem 0.5rem 0;
 `
 
 export default function Projects() {
@@ -34,12 +33,11 @@ export default function Projects() {
     <h1>Projects</h1>
     <p>browse what I've been building lately</p>
     <ProjectContainer>
+      <Project {...projectMock} title='Shoppies Mobile' img={null} api={null}/>
       <Project {...projectMock}/>
-      <Project {...projectMock} img={null}/>
-      <Project {...projectMock} api={null}/>
-      <Project {...projectMock} api={null}/>
-      <Project {...projectMock}/>
-      <Project {...projectMock}/>
+      <Project {...projectMock} title='Reco'img='reco.png'description='an app that supports local business through word of mouth. Users create lists and recommend businesses'/>
+      <Project {...projectMock} title='Scheduler' api={null} img={null}/>
+      <Project {...projectMock} title='Story Creator' img={null}/>
     </ProjectContainer>
     </Layout>
   )

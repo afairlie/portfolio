@@ -49,7 +49,7 @@ export default function About() {
         <div>
           <h2>Ariane Fairlie</h2>
           <p>
-            I'm a <span>full stack developer</span> based in Montreal. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter. I have experience in project management, team oversight, and system/process creation.
+            I'm a <span>full stack developer</span> based in Montreal. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter.
           </p>
           <p>
             I'm an impassioned learner and creative problem solver, interested in design and ethics in tech.
