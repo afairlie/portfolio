@@ -22,7 +22,7 @@ const Content = styled.div`
 export default function Home() {
   return (
     <>
-    <SplashContainer>
+    <SplashContainer id='splash'>
       <h1>SPLASH!</h1>
     </SplashContainer>
     <Layout>
