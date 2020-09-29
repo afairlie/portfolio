@@ -6,9 +6,9 @@ const ProjectItem = styled.div`
   border: 1px solid blue;
   border-radius: 2px;
   margin-bottom: 3rem;
+  max-height: fit-content;
 
   padding: 0.5rem;
-  position: relative;
 `
 
 const ImgContainer = styled.div`
@@ -19,11 +19,11 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
   border: 20px solid ${({theme}) => theme.colors.highlight};
-  width: 100%;
+  max-width: 400px;
 `
 
 const Container = styled.div`
-  max-width: 21rem;
+  max-width: 22rem;
   padding: 0 1rem;
 `
 
@@ -67,7 +67,7 @@ export default function Project({api}) {
   return (
     <ProjectItem>
       <ImgContainer>
-        <Image src='./shoppies2.png'></Image>
+        <Image src='./shoppies2.bmp'></Image>
       </ImgContainer>
       <Container>
         <Header>

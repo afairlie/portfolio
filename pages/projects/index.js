@@ -9,7 +9,7 @@ const ProjectContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 1rem;
+  margin-top: 1rem;
 `
 
 export default function Projects() {
