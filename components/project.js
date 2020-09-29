@@ -6,7 +6,7 @@ const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   border: 1px solid blue;
   border-radius: 2px;
 
@@ -16,7 +16,7 @@ const ProjectContainer = styled.div`
 
 const Image = styled.img`
   border: 20px solid ${({theme}) => theme.colors.highlight};
-  max-width: 21rem;
+  max-width: 22rem;
 `
 
 const Container = styled.div`

@@ -5,6 +5,8 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   align-items: center;
 
+  flex-wrap: wrap;
+
   width: 100%;
   min-height: 100px;
 
@@ -32,16 +34,15 @@ const IconsContainer = styled.div`
 
 function Footer() {
   return (
-    <>
-      <StyledFooter>
-        <p>a website by Ariane Fairlie built with Nextjs</p>
-        <IconsContainer>
-          <img src="https://img.icons8.com/ios/24/0000ff/github.png"/>
-          <img src="https://img.icons8.com/ios/24/0000ff/linkedin.png"/>
-          <img src="https://img.icons8.com/ios/24/0000ff/email.png"/>
-        </IconsContainer>
-      </StyledFooter>
-    </>
+    <StyledFooter>
+      <p>built by Ariane with Next js, Styled Components</p>
+      <IconsContainer>
+        <img src="https://img.icons8.com/ios/24/0000ff/github.png"/>
+        <img src="https://img.icons8.com/ios/24/0000ff/linkedin.png"/>
+        <img src="https://img.icons8.com/ios/24/0000ff/email.png"/>
+      </IconsContainer>
+      <p>ariane.fairlie[at]gmail.com</p>
+    </StyledFooter>
   )
 }
 
