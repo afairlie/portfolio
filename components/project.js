@@ -3,16 +3,20 @@ import styled from 'styled-components'
 const ICON_COLOR = `ff7f50`
 
 const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   border: 1px solid blue;
   border-radius: 2px;
-  margin: 0 0.5rem 3rem;
 
+  margin: 0 0.5rem 3rem;
   padding: 0.5rem;
 `
 
 const Image = styled.img`
   border: 20px solid ${({theme}) => theme.colors.highlight};
-  max-width: 350px;
+  max-width: 21rem;
 `
 
 const Container = styled.div`
