@@ -10,7 +10,7 @@ const Description = styled.div`
   flex: 1;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
 
   border: 1px solid blue;
   border-radius: 2px;
@@ -49,8 +49,9 @@ export default function About() {
         <div>
           <h2>Ariane Fairlie</h2>
           <p>
-            I'm a <span>full stack developer</span> originally trained as an artist. I've worked as an entrepreneur, studio manager, and recruiter, with experience in project management, team oversight, and system/process creation.<br/>
-            <br/>
+            I'm a <span>full stack developer</span> based in Montreal. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter. I have experience in project management, team oversight, and system/process creation.
+          </p>
+          <p>
             I'm an impassioned learner and creative problem solver, interested in design and ethics in tech.
           </p>
         </div>

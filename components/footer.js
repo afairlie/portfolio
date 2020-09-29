@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   width: 100%;
@@ -19,11 +19,27 @@ const StyledFooter = styled.footer`
   }
 `
 
+const IconsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  img {
+    margin-left: 0.25rem;
+  }
+`
+
 function Footer() {
   return (
     <>
       <StyledFooter>
         <p>a website by Ariane Fairlie built with Nextjs</p>
+        <IconsContainer>
+          <img src="https://img.icons8.com/ios/24/0000ff/github.png"/>
+          <img src="https://img.icons8.com/ios/24/0000ff/linkedin.png"/>
+          <img src="https://img.icons8.com/ios/24/0000ff/email.png"/>
+        </IconsContainer>
       </StyledFooter>
     </>
   )
