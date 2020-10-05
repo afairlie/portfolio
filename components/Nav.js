@@ -25,7 +25,7 @@ const StyledLink = styled.a`
 export default function Nav() {
   return (
   <Container>
-    <Link href="/#content" passHref>
+    <Link href="/" passHref>
       <StyledLink>Home</StyledLink>
     </Link>
     <Link href="/about" passHref>

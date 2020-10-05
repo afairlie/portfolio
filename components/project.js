@@ -16,7 +16,7 @@ const ProjectContainer = styled.div`
 
 const Image = styled.img`
   border: 20px solid ${({theme}) => theme.colors.highlight};
-  max-width: 22rem;
+  /* width: 22rem; */
 `
 
 const Container = styled.div`
@@ -72,14 +72,14 @@ export default function Project({
   return (
     <div>
       <ProjectContainer>
-        {img && <Image src={`${img}`}></Image>}
+        {img && <Image src={`${img}`} width='350'></Image>}
         <Container>
           <Header>
             <TitleContainer>
               <Title>{title}</Title>
               <IconsContainer>
                 <Icon href={repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
-                <Icon href={url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>
+                {url && <Icon href={url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>}
               </IconsContainer>
             </TitleContainer>
             <Text>{description}</Text>
@@ -93,7 +93,7 @@ export default function Project({
               <SubHeading>API</SubHeading>
               <IconsContainer>
                 <Icon href={api.repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
-                <Icon href={api.url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>
+                {api.url && <Icon href={api.url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>}
               </IconsContainer>
             </TitleContainer> 
             <Text>{api.stack}</Text>

@@ -4,19 +4,17 @@ import Layout from '../components/layout'
 
 const Description = styled.div`
   display: flex;
-  max-width: 800px;
-  justify-content: space-evenly;
-  align-items: center;
   flex: 1;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
-  padding: 1rem 2rem;
+  margin-bottom: 1rem;
 
-  border: 1px solid blue;
-  border-radius: 2px;
+  /* border: 1px solid blue;
+  border-radius: 2px; */
 
   img {
-    max-height: 450px;
+    /* height: 450px; */
 
     border: 1px solid blue;
     border-radius: 2px;
@@ -26,13 +24,12 @@ const Description = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 1rem;
+    padding: 1rem;
 
     p {
       text-indent: 2rem;
       font-size: 1.5em;
-      flex: 2;
-      max-width: 750px;
+      max-width: 700px;
       
       span {
         background-color: ${({theme}) => theme.colors.highlight};
@@ -44,18 +41,20 @@ const Description = styled.div`
 export default function About() {
   return (
     <Layout>
-      <h1>About</h1>
       <Description>
         <div>
-          <h2>Ariane Fairlie</h2>
+        <h1>About</h1>
           <p>
-            I'm a <span>full stack developer</span> based in Montreal. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter.
+            I'm a <span>full stack developer</span> based in Montreal, QC. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter.
           </p>
           <p>
-            I'm an impassioned learner and creative problem solver, interested in design and ethics in tech.
+            I'm an impassioned learner and creative problem solver, interested in <span>design and ethics in tech</span>.
+          </p>
+          <p>
+            If you're interested in working together or simply want to connect, please feel free to reach out by email or the socials linked below!
           </p>
         </div>
-        <img src='blue.jpg'></img>
+        <img src='portrait.jpg' width='300'></img>
       </Description>
     </Layout>
   )
