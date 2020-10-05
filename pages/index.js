@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <Layout>
         <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
+          <title>ariane's portfolio</title>
+          <link rel="icon" href="/logo.jpg" />
         </Head>
         
         <Content>
