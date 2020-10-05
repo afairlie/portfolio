@@ -36,9 +36,9 @@ export default function Home() {
         <ambientLight intensity={0.8} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
-        <Box position={[-2, 0, 0]} color={'#a1bccf'}/>
-        <Box position={[0, 0, 0]} color={'#ffff99'} activeStart/>
-        <Box position={[2, 0, 0]} color={'#3a867d'} />
+        <Box position={[2, 0, 0]} color={'#a1bccf'}/>
+        <Box position={[0, 0, 0]} color={'#ff751c'} activeStart/>
+        <Box position={[-2, 0, 0]} color={'#3a867d'}/>
       </Canvas>
     </SplashContainer>
     <Layout>
