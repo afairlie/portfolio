@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import Nav from './nav'
-import Footer from './footer'
+import Nav from './nav.js'
+import Footer from './footer.js'
 
 const Wrapper = styled.div`
   padding: 0.5rem;
