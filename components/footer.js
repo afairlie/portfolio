@@ -13,12 +13,6 @@ const StyledFooter = styled.footer`
   border: 20px solid ${({theme}) => theme.colors.highlight};
 
   padding: 0.5rem;
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 `
 
 const IconsContainer = styled.div`
@@ -27,8 +21,16 @@ const IconsContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  img {
-    margin-left: 0.25rem;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 20rem;
+
+    &:hover {
+      background-color: ${({theme}) => theme.colors.highlight};
+    }
   }
 `
 

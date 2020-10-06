@@ -8,6 +8,7 @@ const Description = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem;
   margin-bottom: 1rem;
 
   /* border: 1px solid blue;
@@ -24,7 +25,7 @@ const Description = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 1rem;
+    padding: 0.5rem;
 
     p {
       text-indent: 2rem;
