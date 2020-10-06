@@ -13,7 +13,13 @@ const Container = styled.div`
   align-items: center;
 `
 
-const StyledLink = styled.a`
+const LinkFormat = ({ as, children, className, href }) => (
+  <Link href={href} as={as} passHref>
+    <a className={className}>{children}</a>
+  </Link>
+)
+
+const StyledLink = styled(LinkFormat)`
   margin-left: 0.5rem;
   padding: 0.25rem;
 
@@ -25,18 +31,18 @@ const StyledLink = styled.a`
 export default function Nav() {
   return (
   <Container>
-    <Link href="/" passHref>
-      <StyledLink>Home</StyledLink>
-    </Link>
-    <Link href="/about" passHref>
-      <StyledLink>About</StyledLink>
-    </Link>
-    <Link href="/projects" passHref>
-      <StyledLink>Projects</StyledLink>
-    </Link>
-    <Link href="/cv" passHref>
-      <StyledLink>CV</StyledLink>
-    </Link>
+
+      <StyledLink href="/">Home</StyledLink>
+
+
+      <StyledLink href="/about">About</StyledLink>
+
+
+      <StyledLink href="/projects">Projects</StyledLink>
+
+
+      <StyledLink href="/cv">CV</StyledLink>
+
   </Container>
   )
 }
