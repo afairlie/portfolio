@@ -27,7 +27,7 @@ export default [
     img: 'shoppies.png',
     repo: 'https://github.com/afairlie/shoppies',
     url: 'https://shoppy-awards.netlify.app/',
-    description: 'an to nominate movies from OMDB API',
+    description: 'an app to nominate movies from OMDB API',
     stack: 'Typescript, React, Styled Components, Framer Motion',
     api: {
       stack: 'Rails Api, Active Record, JWT Auth, Postgres',
