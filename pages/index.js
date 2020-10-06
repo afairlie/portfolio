@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import {Canvas} from 'react-three-fiber'
 import Layout from '../components/layout'
 
 const Content = styled.div`
