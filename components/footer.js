@@ -40,7 +40,7 @@ function Footer() {
         <a href='https://github.com/afairlie' target='_blank'><img src="https://img.icons8.com/ios/24/0000ff/github.png"/></a>
         <a href='https://linkedin.com/in/arianefairlie' target='_blank'><img src="https://img.icons8.com/ios/24/0000ff/linkedin.png"/></a>
         <a href='https://dev.to/afairlie' target='_blank'><img src="https://img.icons8.com/windows/32/0000ff/dev.png"/></a>
-        <a href='mailto://ariane.fairlie@gmail.com' target='_blank'><img src="https://img.icons8.com/ios/24/0000ff/email.png"/></a>
+        <a href='mailto:ariane.fairlie@gmail.com' target='_blank'><img src="https://img.icons8.com/ios/24/0000ff/email.png"/></a>
       </IconsContainer>
       <p>ariane.fairlie[at]gmail.com</p>
     </StyledFooter>
