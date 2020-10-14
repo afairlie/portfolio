@@ -3,11 +3,13 @@ import styled from 'styled-components'
 const ICON_COLOR = `ff7f50`
 
 const ProjectContainer = styled.div`
+  background-color: cornsilk;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  border: 1px solid blue;
+  
   border-radius: 2px;
 
   margin: 0 0.5rem 3rem;
@@ -15,8 +17,9 @@ const ProjectContainer = styled.div`
 `
 
 const Image = styled.img`
-  border: 20px solid ${({theme}) => theme.colors.highlight};
-  /* width: 22rem; */
+  border: 1px solid blue;
+  border-radius: 2px;
+  margin: 20px;
 `
 
 const Container = styled.div`

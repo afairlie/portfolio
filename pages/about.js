@@ -13,12 +13,10 @@ const Description = styled.div`
   margin-bottom: 1rem;
 
   img {
-    border: 1px solid blue;
     border-radius: 2px;
   }
 
   div {
-    /* background-color: lightGray; */
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -46,7 +44,6 @@ const Description = styled.div`
   }
 
   div.image {
-    /* background-color: white; */
     align-items: center;
     flex: 1;
   }
