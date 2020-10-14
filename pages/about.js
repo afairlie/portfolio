@@ -5,37 +5,50 @@ import Layout from '../components/layout'
 const Description = styled.div`
   display: flex;
   flex: 1;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 1rem 5%;
   margin-bottom: 1rem;
 
-  /* border: 1px solid blue;
-  border-radius: 2px; */
-
   img {
-    /* height: 450px; */
-
     border: 1px solid blue;
     border-radius: 2px;
   }
 
   div {
+    /* background-color: lightGray; */
+    align-items: center;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2;
     padding: 0.5rem;
+    margin: 0 1rem;
+    
+    h1 {
+      width: 100%;
+      text-align: left;
+      max-width: 500px;
+      min-width: 300px;
+    }
 
     p {
       text-indent: 2rem;
       font-size: 1.5em;
-      max-width: 700px;
+      max-width: 500px;
+      min-width: 300px;
       
       span {
         background-color: ${({theme}) => theme.colors.highlight};
       }
     }
+  }
+
+  div.image {
+    /* background-color: white; */
+    align-items: center;
+    flex: 1;
   }
 `
 
@@ -44,7 +57,7 @@ export default function About() {
     <Layout>
       <Description>
         <div>
-        <h1>About</h1>
+          <h1>About</h1>
           <p>
             I'm a <span>full stack developer</span> based in Montreal, QC. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter.
           </p>
@@ -55,7 +68,9 @@ export default function About() {
             If you're interested in working together or simply want to connect, please feel free to reach out by email or the socials linked below!
           </p>
         </div>
-        <img src='portrait.jpg' width='300'></img>
+        <div className='image'>
+          <img src='portrait.jpg' width='300'></img>
+        </div>
       </Description>
     </Layout>
   )

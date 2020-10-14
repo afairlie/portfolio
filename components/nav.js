@@ -10,12 +10,19 @@ const Container = styled.div`
   width: 100%;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
+
+
+  div {
+    background-color: cornsilk;
+  }
 `
 
 const StyledLink = styled.a`
-  margin-left: 0.5rem;
-  padding: 0.25rem;
+  margin: 0.25rem;
+  
+  &:first-child {
+    margin-left: 0;
+  }
 
   &:hover {
     background-color: ${({theme}) => theme.colors.highlight};
@@ -25,18 +32,20 @@ const StyledLink = styled.a`
 export default function Nav() {
   return (
   <Container>
-    <Link href="/" passHref>
-      <StyledLink>Home</StyledLink>
-    </Link>
-    <Link href="/about" passHref>
-      <StyledLink>About</StyledLink>
-    </Link>
-    <Link href="/projects" passHref>
-      <StyledLink>Projects</StyledLink>
-    </Link>
-    <Link href="/cv" passHref>
-      <StyledLink href='/ariane-fairlie-cv.pdf'>CV</StyledLink>
-    </Link>
+    <div>
+      <Link href="/" passHref>
+        <StyledLink>Home</StyledLink>
+      </Link>
+      <Link href="/about" passHref>
+        <StyledLink>About</StyledLink>
+      </Link>
+      <Link href="/projects" passHref>
+        <StyledLink>Projects</StyledLink>
+      </Link>
+      <Link href="/cv" passHref>
+        <StyledLink href='/ariane-fairlie-cv.pdf'>CV</StyledLink>
+      </Link>
+    </div>
   </Container>
   )
 }
