@@ -47,8 +47,8 @@ const Hello = styled.div`
   top: calc(58% - 23vmin);
   transform: scale(-1, 1);
 
-  animation: ${rotate} 0.4s linear 3;
-  animation-delay: 1.5s;
+  animation: ${rotate} 0.4s linear 2;
+  animation-delay: 0.75s;
 `
 
 export default function Home() {
