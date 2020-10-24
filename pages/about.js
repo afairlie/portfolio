@@ -6,6 +6,7 @@ const Description = styled.div`
   display: flex;
   flex: 1;
   width: 100%;
+  max-width: 1175px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
