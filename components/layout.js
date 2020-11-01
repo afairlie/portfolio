@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.main`
-  min-height: calc(100vh - 100px - 3rem);
+  min-height: calc(100vh - 100px - 3rem - 10px);
   display: flex;
   width: 100vw;
   flex-direction: column;

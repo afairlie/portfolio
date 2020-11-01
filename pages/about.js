@@ -14,7 +14,10 @@ const Description = styled.div`
   margin-bottom: 1rem;
 
   img {
+    border: 1px lightgray solid;
     border-radius: 2px;
+    padding: 0;
+    margin: 0;
   }
 
   div {
@@ -47,6 +50,7 @@ const Description = styled.div`
   div.image {
     align-items: center;
     flex: 1;
+    padding: 0;
   }
 `
 
@@ -64,7 +68,7 @@ export default function About() {
           </p>
         </div>
         <div className='image'>
-          <img src='portrait.jpg' width='300'></img>
+          <img src='AF_2016.jpg' width='300'></img>
         </div>
       </Description>
     </Layout>
