@@ -17,7 +17,7 @@ const ProjectContainer = styled.div`
 `
 
 const Image = styled.img`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   border-radius: 2px;
   margin: 20px;
 

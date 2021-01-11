@@ -6,12 +6,6 @@ import Project from '../../components/project'
 import projectsData from '../../public/projects'
 
 const ProjectContainer = styled.div`
-  /* display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 1rem 0.5rem 0; */
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 25rem));

@@ -15,6 +15,19 @@
 
 export default [
   {
+    title: 'Shoppies 2.0',
+    img: null,
+    repo: 'https://github.com/afairlie/shoppies2.0',
+    url: null,
+    description: 'an app to nominate movies from OMDB API',
+    stack: 'Typescript, React, React Router',
+    api: {
+      stack: 'Rails API, Postgres, JWT Auth',
+      repo: 'https://github.com/afairlie/shoppies_api',
+      url: 'https://shoppy-awards-api.herokuapp.com/',
+    },
+  },
+  {
     title: 'Shoppies Mobile',
     img: 'shoppies-mobile.png',
     repo: 'https://github.com/afairlie/shoppies-mobile',

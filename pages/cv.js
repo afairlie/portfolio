@@ -58,13 +58,27 @@ export default function CV() {
       </PDF> */}
       <Description>
           <h2>Stack</h2>
-          <p><span>Languages:</span> Typescript, Javascript, Ruby, SQL, HTML, CSS</p>
-          <p><span>Libraries & Frameworks:</span> ReactJS, NodeJS, Express, Ajax, Ruby on Rails, Styled-Components, Material UI, Bootstrap, SASS, Framer-Motion, classNames, JQuery.</p>
-          <p><span>Databases:</span> Postgres</p>
+          <p><span>Languages:</span> Typescript, Javascript, Python, Ruby, SQL, PHP, HTML, CSS</p>
+          <p><span>Libraries & Frameworks:</span><br/><br/>ReactJS, Mithril, NodeJS, Express.
+          <br/>Ruby on Rails, Web2Py, Flask.
+          <br />Styled-Components, Material UI, Framer-Motion, PostCSS, CK Editor, Bootstrap, SASS, jQuery.</p>
+          <p><span>Databases:</span> PostgreSQL, MariaDB/MySQL, Sqlite.</p>
           <p><span>Testing:</span> Postman, Cypress, Jest, Mocha + Chai, Rspec</p>
-          <p><span>Other Tools:</span> Git & Github, Storybook, Figma, Photoshop, InDesign</p>
-          <h2>Work Experience</h2>
+          <p><span>Tools:</span> Git, Github, VS Code, Bash, Makefile, Browserify, Webpack, Eleventy.</p>
+          <p><span>Hosting/Cloud</span> Netlify, Heroku, Amazon S3.</p>
+          <p><span>Design Tools:</span> Storybook, Figma, Photoshop, InDesign, Image Magick.</p>
 
+          <h2>Work Experience</h2>
+          <p><span>Full Stack Web Development Intern</span> - <a href='https://waldman.co/en' target='_blank'>Waldman Co.</a> | Oct. 2020 - Present</p>
+          <ul>
+            <h4><a href='https://strongproject.com/' target='_blank'>Strong Project</a></h4>
+            <li> React/Mithril, PHP, MySQL, S3.</li>
+            <li>Optimized performance for web and mobile.</li>
+            <li>Improved Page Speed score by 30-40% on both</li>
+            <h4><a href='https://oclare.org/' target='_blank'>Oclare</a></h4>
+            <li>Mithril, CKEditor, Web2Py, MySQL, Latex</li>
+            <li>Integrate R editor, CKEdit/Latex sync (ordered lists), Bug Fixes</li>
+          </ul>
           <p><span>HR & Recruiting</span> - <a href='http://www.sliq.com/' target='_blank'>Sliq Media Technologies</a> | Dec. 2017 - March 2020</p>
           <ul>
             <li>Coordinated recruiting - Interviewed and successfully filled 6 positions in under 1 year for a wide range of roles including Support Manager, Sales Engineer, System Integrator</li>

@@ -66,7 +66,7 @@ export default function Home() {
             Full Stack Developer
           </h2>
           <p>
-            Typescript, Javascript, Ruby, HTML, CSS & SQL
+            Typescript, Javascript, Ruby, Python, HTML, CSS & SQL
           </p>
         </Content>
     </Layout>
