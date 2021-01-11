@@ -18,7 +18,7 @@ export default [
     title: 'Shoppies 2.0',
     img: null,
     repo: 'https://github.com/afairlie/shoppies2.0',
-    url: null,
+    url: 'https://shoppies-reloaded.netlify.app/',
     description: 'an app to nominate movies from OMDB API',
     stack: 'Typescript, React, React Router',
     api: {
