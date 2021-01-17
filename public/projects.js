@@ -16,7 +16,7 @@
 export default [
   {
     title: 'Shoppies 2.0',
-    img: null,
+    img: 'shoppies-reloaded.png',
     repo: 'https://github.com/afairlie/shoppies2.0',
     url: 'https://shoppies-reloaded.netlify.app/',
     description: 'an app to nominate movies from OMDB API',
