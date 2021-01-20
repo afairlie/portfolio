@@ -14,7 +14,7 @@
     "react-dom": "16.13.1",
     "react-is": "^16.13.1",
     "react-three-fiber": "^5.0.1",
-    "simple-oauth2": "^4.2.0",
+    "simple-oauth2": "^2.5.2",
     "styled-components": "^5.2.0",
     "three": "^0.120.1"
   },
