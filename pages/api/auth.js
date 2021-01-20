@@ -13,7 +13,7 @@ export default (req, res) => {
     scope: `repo,user`,
     state: randomString()
   });
-
+  console.log(url)
   res.writeHead(301, { Location: url });
   res.end();
 };

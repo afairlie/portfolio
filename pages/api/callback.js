@@ -7,7 +7,7 @@ export default async (req, res) => {
     const oauth2 = create()
 
     try {
-        const accessToken = await oauth.authorizationCode.getToken({
+        const accessToken = await oauth2.authorizationCode.getToken({
           code,
           redirect_uri: `https://${host}/api/callback`
         });
