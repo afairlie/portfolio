@@ -13,22 +13,18 @@ const ProjectContainer = styled.div`
   border-radius: 2px;
 
   margin: 0 0.5rem 3rem;
-  padding: 0.5rem;
 `
 
 const Image = styled.img`
-  /* border: 1px solid blue; */
   border-radius: 2px;
-  margin: 20px;
 
   width: 100%;
-  max-width: 320px;
   min-width: 200px;
 `
 
 const Container = styled.div`
   max-width: 22rem;
-  padding: 0 1rem;
+  padding: 1rem;
   width: 100%;
 `
 

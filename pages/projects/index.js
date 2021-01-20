@@ -14,12 +14,18 @@ const ProjectContainer = styled.div`
   justify-content: space-evenly;
 `
 
+const StyledH2 = styled.p`
+  margin: 0 2rem 2rem;
+  text-align: center;
+  font-size: 1.5em;
+`
+
 export default function Projects({ projectsData }) {
 
   return (
     <Layout>
     <h1>Projects</h1>
-    <p>browse what I've been building lately</p>
+    <StyledH2>browse what I've been building lately</StyledH2>
     <ProjectContainer>
       {projectsData.map((p, i) => <Project key={i} {...p}/>)}
     </ProjectContainer>
@@ -36,7 +42,7 @@ export async function getStaticProps() {
     const fileContents = fs.readFileSync(filePath, 'utf8')
     const projects = JSON.parse(fileContents)
     return projects
-  })[0]
+  })
   return {
     props: {
       projectsData
