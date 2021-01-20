@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: afairlie/portfolio
+  branch: main
+  base_url: https://afairlie.biz
+  api_endpoint: api/auth
+
+media_folder: public/images
+public_folder: images
+
+collections:
+  - name: "cms-projects"
+    label: "Projects"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "shoppies2.json"
+        label: "Shoppies 2.0"
+        name: "shoppies2"
+        fields: 
+          - {name: 'title', label: 'title', widget: "string"}

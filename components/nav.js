@@ -17,10 +17,10 @@ const Container = styled.div`
 
   div {
     background-color: cornsilk;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid lightgray;
     border-radius: 2px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
   }
 `
 
