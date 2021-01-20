@@ -3,7 +3,7 @@ backend:
   repo: afairlie/portfolio
   branch: main
   base_url: https://afairlie.biz
-  api_endpoint: api/auth
+  api_endpoint: /api/auth
 
 media_folder: public/images
 public_folder: images
