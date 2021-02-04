@@ -1,4 +1,6 @@
 {
+    "id":"reco",
+    "order": "2",
     "title":"Reco",
     "img":"reco.png",
     "repo":"https://github.com/afairlie/reco",

@@ -1,14 +1,6 @@
 import Layout from '../components/layout'
 import styled from 'styled-components'
 
-// const PDF = styled.embed`
-//   margin: 1rem;
-
-//   @media (max-width: 900px) {
-//     display: none;
-//   }
-// `
-
 const Instructions = styled.p`
   a {
     background-color: ${({theme}) => theme.colors.highlight};
@@ -25,7 +17,7 @@ const Description = styled.div`
     text-align: left;
 
     background-color: cornsilk;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 0px;
 
     p > span {
       font-weight: bold;
@@ -54,8 +46,6 @@ export default function CV() {
     <Layout>
       <h1>CV</h1>
       <Instructions>click <a href='/ariane-fairlie-cv.pdf' target='_blank'>here</a> to open PDF in new tab</Instructions>
-      {/* <PDF width="825" height="1120" type="application/pdf" src="/ariane-fairlie-cv.pdf" frameborder="0">
-      </PDF> */}
       <Description>
           <h2>Stack</h2>
           <p><span>Languages:</span> Typescript, Javascript, Python, Ruby, SQL, PHP, HTML, CSS</p>

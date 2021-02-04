@@ -1,4 +1,6 @@
 {
+    "id":"shoppies-two",
+    "order": "1",
     "title":"Shoppies 2.0",
     "img":"shoppies-reloaded.png",
     "repo":"https://github.com/afairlie/shoppies2.0",

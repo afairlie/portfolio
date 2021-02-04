@@ -1,4 +1,6 @@
 {
+    "id":"story-creator",
+    "order": "6",
     "title":"Story Creator",
     "img":null,
     "repo":"https://github.com/afairlie/storycreator-midterm",

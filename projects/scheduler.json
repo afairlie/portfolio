@@ -1,4 +1,6 @@
 {
+    "id":"scheduler",
+    "order": "5",
     "title":"Scheduler",
     "img":null,
     "repo":"https://github.com/afairlie/Scheduler",

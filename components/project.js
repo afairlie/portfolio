@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 const ICON_COLOR = `ff7f50`
 
-const ProjectContainer = styled.div`
+const ProjectContainer = styled.a`
   background-color: cornsilk;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 0px;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +12,14 @@ const ProjectContainer = styled.div`
   
   border-radius: 2px;
 
-  margin: 0 0.5rem 3rem;
+  margin: 0 0.5rem;
+
+  transition: .3s;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transform: scale(1.025);
+  }
 `
 
 const Image = styled.img`
@@ -65,6 +72,7 @@ const Text = styled.p`
 `
 
 export default function Project({
+  id,
   img,
   title,
   repo,
@@ -75,7 +83,7 @@ export default function Project({
 }) {
   return (
     <div>
-      <ProjectContainer>
+      <ProjectContainer href={'/projects/'+id}>
         {img && <Image src={`${img}`} width='350'></Image>}
         <Container>
           <Header>

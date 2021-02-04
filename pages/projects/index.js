@@ -10,8 +10,9 @@ const ProjectContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 25rem));
-  grid-gap: 1rem; 
+  grid-gap: 2rem; 
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 `
 
 const StyledH2 = styled.p`
@@ -40,9 +41,9 @@ export async function getStaticProps() {
   const projectsData = filenames.map(filename => {
     const filePath = path.join(projectsDirectory, filename)
     const fileContents = fs.readFileSync(filePath, 'utf8')
-    const projects = JSON.parse(fileContents)
-    return projects
-  })
+    return JSON.parse(fileContents)
+  }).sort((a, b) => a.order - b.order)
+
   return {
     props: {
       projectsData

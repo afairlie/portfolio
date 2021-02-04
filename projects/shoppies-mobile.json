@@ -1,4 +1,6 @@
 {
+    "id":"shoppies-mobile",
+    "order": "4",
     "title":"Shoppies Mobile",
     "img":"shoppies-mobile.png",
     "repo":"https://github.com/afairlie/shoppies-mobile",
