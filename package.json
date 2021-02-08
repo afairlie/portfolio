@@ -16,6 +16,7 @@
     "react-three-fiber": "^5.0.1",
     "simple-oauth2": "^2.5.2",
     "styled-components": "^5.2.0",
+    "swiper": "^6.4.11",
     "three": "^0.120.1"
   },
   "devDependencies": {

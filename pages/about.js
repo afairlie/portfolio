@@ -14,7 +14,7 @@ const Description = styled.div`
   margin-bottom: 1rem;
 
   img {
-    border: 1px lightgray solid;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 2px 2px;
     border-radius: 2px;
     padding: 0;
     margin: 0;

@@ -5,35 +5,45 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   position: sticky;
+  top: .5em;
   z-index: 1200;
-  top: 0.5rem;
-  right: 0.5rem;
+  align-self: flex-end;
+
   display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: flex-end;
-  
 
+  background-color: cornsilk;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 2px 2px;
 
-  div {
-    background-color: cornsilk;
-    padding: 10px;
-    border: 1px solid lightgray;
-    border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 5px 0px;
-  }
+  padding: 7px;
 `
 
 const StyledLink = styled.a`
-  margin: 0.25rem;
-  border-bottom: ${props => props.active ? '1px orange solid' : 'none'};
+  margin: 0 .25em;
+  padding-top: 3px;
+  display: block;
+  /* background-color: ${props => props.active && 'rgba(255, 150, 0, 0.2)'}; */
 
-  &:first-child {
-    margin-left: 0;
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: ${props => props.active ? 'blue' : 'blue'};
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    top: 2px;
+
+    width: ${props => props.active && '100%'};
+    left: ${props => props.active && '0'};
   }
 
-  &:hover {
-    background-color: ${({theme}) => theme.colors.highlight};
+  &:hover:after {
+    width: 100%; 
+    left: 0;
   }
 `
 
@@ -42,7 +52,6 @@ export default function Nav() {
 
   return (
   <Container>
-    <div>
       <Link href="/" passHref>
         <StyledLink active={router.pathname === '/'}>Home</StyledLink>
       </Link>
@@ -55,7 +64,6 @@ export default function Nav() {
       <Link href="/cv" passHref>
         <StyledLink active={router.pathname === '/cv'}>CV</StyledLink>
       </Link>
-    </div>
   </Container>
   )
 }

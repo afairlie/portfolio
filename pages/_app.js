@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { theme } from '../styles/theme'
+import 'swiper/swiper-bundle.css';
 
 const GlobalStyle = createGlobalStyle`
 html,
