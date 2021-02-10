@@ -15,7 +15,7 @@ const Container = styled.div`
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 2px 2px;
 
-  padding: 7px;
+  padding: 7px 7px 10px;
 `
 
 const StyledLink = styled.a`

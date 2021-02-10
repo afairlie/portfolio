@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import Layout from '../../components/layout'
 
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styled from 'styled-components'
@@ -14,9 +14,9 @@ const Container = styled.div`
     justify-content: space-around;
     width: 100vw;
     height: 100%;
-    padding: 2rem 0.5rem;
+    padding: 2rem;
     gap: 2rem;
-    margin: 0 auto;
+    margin: auto;
 
     article.description {
         height: max-content;
@@ -35,21 +35,14 @@ const Container = styled.div`
     }
 
     img {
-        max-width: 45vw;
+        max-width: 100%;
         max-height: 70vh;
-        /* height: 100%;
-        width: 100%; */
         width: auto;
-    height: auto;
+        height: auto;
         object-fit: scale-down;
-        /* object-position: center; */
         box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 0px;
         margin: 0 auto;
     }
-
-    /* .swiper-wrapper {
-        max-width: 350px;
-    } */
 `
 
 const StyledLink = styled.a`
@@ -76,7 +69,7 @@ const StyledLink = styled.a`
         left: 0; 
     }
 `
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 const ProjectPage = ({projectData}) => {
     
   return (
@@ -100,6 +93,7 @@ const ProjectPage = ({projectData}) => {
                 spaceBetween={3}
                 slidesPerView={1}
                 navigation
+                pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
                 >

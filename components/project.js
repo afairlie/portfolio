@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-const ICON_COLOR = `ff7f50`
+// const ICON_COLOR = `ff7f50`
+const ICON_COLOR = `0000ff`
 
 const ProjectContainer = styled.a`
   background-color: cornsilk;
@@ -36,32 +37,53 @@ const Container = styled.div`
 `
 
 const Header = styled.div`
-  border-bottom: 1px dashed blue;
+  
 `
 
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* border-bottom: 1px dashed blue; */
 `
 
 const Title = styled.h1`
   margin: 0.5rem 0;
 `
 
+// const IconsContainer = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+//   align-items: center;
+// `
+
+// const Icon = styled.a`
+//   margin-left: 0.25rem;
+// `
+
 const IconsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-`
 
-const Icon = styled.a`
-  margin-left: 0.25rem;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 20rem;
+
+    &:hover {
+      background-color: ${({theme}) => theme.colors.highlight};
+    }
+  }
 `
 
 const TechDetails = styled.div`
   padding: 0.5;
+
 `
 const SubHeading = styled.h3`
   margin: 0.5rem 0;
@@ -90,8 +112,8 @@ export default function Project({
             <TitleContainer>
               <Title>{title}</Title>
               <IconsContainer>
-                <Icon href={repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
-                {url && <Icon href={url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>}
+                <a href={repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></a>
+                {url && <a href={url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></a>}
               </IconsContainer>
             </TitleContainer>
             <Text>{description}</Text>
@@ -104,8 +126,8 @@ export default function Project({
             <TitleContainer>
               <SubHeading>API</SubHeading>
               <IconsContainer>
-                <Icon href={api.repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></Icon>
-                {api.url && <Icon href={api.url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></Icon>}
+                <a href={api.repo} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/repository.png`}/></a>
+                {api.url && <a href={api.url} target='_blank'><img src={`https://img.icons8.com/small/26/${ICON_COLOR}/external-link.png`}/></a>}
               </IconsContainer>
             </TitleContainer> 
             <Text>{api.stack}</Text>

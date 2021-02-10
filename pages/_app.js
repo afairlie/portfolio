@@ -29,6 +29,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.swiper-button-prev, .swiper-button-next {
+
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+    color: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: blue;
+}
 `
 
 function MyApp({ Component, pageProps }) {

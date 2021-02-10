@@ -64,7 +64,7 @@ export default function About() {
             I'm a <span>full stack web developer</span> based in Montreal, QC. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter. I'm an impassioned learner and creative problem solver, interested in <span>design and ethics in tech</span>.
           </p>
           <p>
-            If you're interested in working together or simply want to connect, please feel free to reach out by email or the socials linked below!
+            If you're interested in working together or simply want to connect, please email <span>ariane.fairlie[at]gmail.com</span> or click the socials linked below!
           </p>
         </div>
         <div className='image'>
