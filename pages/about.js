@@ -37,7 +37,7 @@ const Description = styled.div`
 
     p {
       text-indent: 2rem;
-      font-size: 1.5em;
+      font-size: 1.2em;
       max-width: 500px;
       min-width: 300px;
       
@@ -61,14 +61,14 @@ export default function About() {
         <div>
           <h1>About</h1>
           <p>
-            I'm a <span>full stack web developer</span> based in Montreal, QC. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter. I'm an impassioned learner and creative problem solver, interested in <span>design and ethics in tech</span>.
+            I'm a full stack web developer based in Montreal, QC. Originally trained as an artist, I've worked as an entrepreneur, studio manager, and recruiter. I'm an impassioned learner and creative problem solver, interested in design and ethics in tech.
           </p>
           <p>
-            If you're interested in working together or simply want to connect, please email <span>ariane.fairlie[at]gmail.com</span> or click the socials linked below!
+            If you're interested in working together or simply want to connect, please email ariane.fairlie[at]gmail.com or click the socials linked below!
           </p>
         </div>
         <div className='image'>
-          <img src='AF_2016.jpg' width='300'></img>
+          <img src='portrait.jpg' width='300'></img>
         </div>
       </Description>
     </Layout>
