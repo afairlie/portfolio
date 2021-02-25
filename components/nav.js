@@ -59,7 +59,7 @@ export default function Nav() {
         <StyledLink active={router.pathname === '/about'}>About</StyledLink>
       </Link>
       <Link href="/projects" passHref>
-        <StyledLink active={router.pathname === '/projects'}>Projects</StyledLink>
+        <StyledLink active={router.pathname.includes('/projects')}>Projects</StyledLink>
       </Link>
       <Link href="/cv" passHref>
         <StyledLink active={router.pathname === '/cv'}>CV</StyledLink>

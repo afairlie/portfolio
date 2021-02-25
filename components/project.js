@@ -106,7 +106,7 @@ export default function Project({
   return (
     <div>
       <ProjectContainer href={'/projects/'+id}>
-        {img && <Image src={`${img}`} width='350'></Image>}
+        {img && <Image src={`/images/${id}/${img}`} width='350'></Image>}
         <Container>
           <Header>
             <TitleContainer>

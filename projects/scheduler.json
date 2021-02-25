@@ -5,6 +5,6 @@
     "img":null,
     "repo":"https://github.com/afairlie/Scheduler",
     "url":null,
-    "description":"an app to book appointments with instructors",
+    "description":"An app to book appointments with instructors.",
     "stack":"React, Express, Storybook, Cypress, Jest"
 }

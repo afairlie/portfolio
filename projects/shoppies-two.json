@@ -2,10 +2,11 @@
     "id":"shoppies-two",
     "order": "1",
     "title":"Shoppies 2.0",
-    "img":"shoppies-reloaded.png",
+    "img":"shoppies-0.png",
     "repo":"https://github.com/afairlie/shoppies2.0",
     "url":"https://shoppies-reloaded.netlify.app/",
-    "description":"a better app to nominate movies from OMDB API",
+    "description":"A better app to nominate movies from OMDB API.",
+    "detailed_description": "Shoppies 2.0 is an app where users can vote for their favourite films. The app uses a debounced search to query the OMDB API. All users can search films, nominate or remove nominations from films. Users receive an alert when they have nominated the maximum 5 films, or an error message is they try to nominate more than 5 films. Anonymous users can register, or save new nominations if they have an existing user profile. At login, user nominations will be retrieved from the Shoppies API. Users can edit and save their nominations. Authorization is handled using JWT tokens with a 5 minute expiration time (no refresh). Saved nominations and the JWT token are persisted in local storage.",
     "stack":"Typescript, React, React Router, Material UI",
     "api": {
       "stack":"Rails API, Postgres, JWT Auth",

@@ -70,7 +70,7 @@ const StyledLink = styled.a`
     }
 `
 SwiperCore.use([Navigation, Pagination]);
-const ProjectPage = ({projectData}) => {
+const ProjectPage = ({data, images}) => {
     
   return (
       <Layout>
@@ -79,31 +79,24 @@ const ProjectPage = ({projectData}) => {
           </Link>
           <Container>
             <article className='description'>
-                <h1>{projectData.title}</h1>
-                <p>{projectData.description}</p>
+                <h1>{data.title}</h1>
+                <p>{data.description}</p>
+                {data.detailed_description && <p>{data.detailed_description}</p>}
                 <h3>Stack</h3>
-                <p>{projectData.stack}</p>
-                {projectData.api && <>
+                <p>{data.stack}</p>
+                {data.api && <>
                     <h3>API Stack</h3>
-                    <p>{projectData.api.stack}</p>
+                    <p>{data.api.stack}</p>
                 </>}
             </article>
             <div className='slider'>
-            {projectData.img && <Swiper
+            {data.img && <Swiper
                 spaceBetween={3}
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
                 >
-                    {/* on img load, get width and height and set Swiper? or pass explicit width and height? */}
-                    <SwiperSlide><img src={'/'+projectData.img}></img></SwiperSlide>
-                    <SwiperSlide><img src={'/'+projectData.img}></img></SwiperSlide>
-                    <SwiperSlide><img src={'/'+projectData.img}></img></SwiperSlide>
-                    <SwiperSlide><img src={'/'+projectData.img}></img></SwiperSlide>
-                    <SwiperSlide><img src={'/'+projectData.img}></img></SwiperSlide>
-
+                    {images && images.map(i => <SwiperSlide><img src={`/images/${data.id}/${i}`}></img></SwiperSlide>)}  
                 </Swiper>}
             </div>
           </Container>
@@ -114,15 +107,22 @@ const ProjectPage = ({projectData}) => {
 export default ProjectPage
 
 export async function getServerSideProps(ctx) {
-    let projectData = null
+    const props = {}
 
     const projectsDirectory = path.join(process.cwd(), 'projects')
     const filename = fs.readdirSync(projectsDirectory).find(f => f.replace('.json', '') === ctx.params.pid)
+    const imageDirectory = path.join(process.cwd(), `public/images/${filename.replace('.json', '')}`)
+
+    try {
+        props.images = fs.readdirSync(imageDirectory)
+    } catch (e) {
+        console.log(e.code)
+    }
     
     if (filename) {
         const filePath = path.join(projectsDirectory, filename)
         const fileContents = fs.readFileSync(filePath, 'utf8')
-        projectData = JSON.parse(fileContents)
+        props.data = JSON.parse(fileContents)
     } else {
         ctx.res.statusCode = 302
         ctx.res.setHeader('Location', '/projects')
@@ -130,9 +130,7 @@ export async function getServerSideProps(ctx) {
     }
 
     return {
-        props: {
-            projectData
-        }
+        props
     }
 
   }

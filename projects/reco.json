@@ -5,7 +5,7 @@
     "img":"reco.png",
     "repo":"https://github.com/afairlie/reco",
     "url":null,
-    "description":"an app that supports local business through word of mouth. Users create lists and recommend businesses",
+    "description":"An app that supports local business through word of mouth. Users create lists and recommend businesses.",
     "stack":"React, Material UI, Framer Motion, React D3 Bubble Chart",
     "api": {
       "stack":"Rails Api, Active Record, Action Cable, Postgres",

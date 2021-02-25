@@ -5,6 +5,6 @@
     "img":null,
     "repo":"https://github.com/afairlie/storycreator-midterm",
     "url":null,
-    "description":"a collective writing platform",
+    "description":"A collective writing platform.",
     "stack":"Jquery, HTML, CSS, Express, Postgres"
 }

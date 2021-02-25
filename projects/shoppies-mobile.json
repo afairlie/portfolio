@@ -5,6 +5,6 @@
     "img":"shoppies-mobile.png",
     "repo":"https://github.com/afairlie/shoppies-mobile",
     "url":null,
-    "description":"a mobile app to nominate movies from OMDB API",
+    "description":"A mobile app to nominate movies from OMDB API.",
     "stack":"React Native, Expo, React Native Elements"
 }
