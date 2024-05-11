@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-// const ICON_COLOR = `ff7f50`
 const ICON_COLOR = `0000ff`
 
 const ProjectContainer = styled.a`
@@ -51,17 +50,6 @@ const Title = styled.h1`
   margin: 0.5rem 0;
 `
 
-// const IconsContainer = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: flex-end;
-//   align-items: center;
-// `
-
-// const Icon = styled.a`
-//   margin-left: 0.25rem;
-// `
-
 const IconsContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -83,7 +71,6 @@ const IconsContainer = styled.div`
 
 const TechDetails = styled.div`
   padding: 0.5;
-
 `
 const SubHeading = styled.h3`
   margin: 0.5rem 0;

@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "copy-cv": "cp ../../Documents/ARIANE/CV_Statements_bios/_JOB-HUNT-2020/ariane-fairlie-cv.pdf ./public/ariane-fairlie-cv.pdf"
+    "start": "next start"
   },
   "dependencies": {
     "next": "9.5.3",
